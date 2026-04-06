@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Privacy Policy — ASTAR AS&I</title>
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --pink:   #E91E8C;
+      --purple: #9B51E0;
+      --bg:     #08090F;
+      --surface:#0F1220;
+      --border: #1A2040;
+      --text:   #E8EDF8;
+      --sub:    #7A8AAA;
+      --muted:  #3A4560;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+
+    /* Top gradient bar */
+    body::before {
+      content: '';
+      display: block;
+      height: 3px;
+      background: linear-gradient(90deg, var(--pink), var(--purple));
+    }
+
+    header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 24px 0;
+    }
+
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .logo-row {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .logo-circle {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--pink), var(--purple));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      font-weight: 900;
+      color: #FFF;
+      flex-shrink: 0;
+    }
+
+    .brand-name {
+      font-size: 22px;
+      font-weight: 900;
+      background: linear-gradient(135deg, var(--pink), var(--purple));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .brand-sub {
+      color: var(--sub);
+      font-size: 13px;
+      margin-top: 1px;
+    }
+
+    main {
+      padding: 48px 0 80px;
+    }
+
+    .page-title {
+      font-size: 36px;
+      font-weight: 900;
+      margin-bottom: 6px;
+      color: var(--text);
+    }
+
+    .effective-date {
+      color: var(--sub);
+      font-size: 14px;
+      margin-bottom: 40px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .effective-date strong {
+      color: var(--pink);
+    }
+
+    .intro-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--pink);
+      border-radius: 10px;
+      padding: 20px 24px;
+      margin-bottom: 40px;
+      color: var(--sub);
+      font-size: 15px;
+      line-height: 1.7;
+    }
+
+    h2 {
+      font-size: 20px;
+      font-weight: 800;
+      color: var(--text);
+      margin: 40px 0 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    h2::before {
+      content: '';
+      display: block;
+      width: 4px;
+      height: 20px;
+      background: linear-gradient(var(--pink), var(--purple));
+      border-radius: 2px;
+      flex-shrink: 0;
+    }
+
+    p {
+      color: var(--sub);
+      margin-bottom: 14px;
+      font-size: 15px;
+    }
+
+    ul {
+      color: var(--sub);
+      padding-left: 22px;
+      margin-bottom: 14px;
+      font-size: 15px;
+    }
+
+    li {
+      margin-bottom: 7px;
+    }
+
+    .tag {
+      display: inline-block;
+      background: rgba(233,30,140,0.12);
+      border: 1px solid rgba(233,30,140,0.3);
+      color: var(--pink);
+      border-radius: 5px;
+      padding: 2px 9px;
+      font-size: 12px;
+      font-weight: 700;
+      margin-left: 6px;
+      vertical-align: middle;
+    }
+
+    .no-collect {
+      background: rgba(16,217,126,0.08);
+      border: 1px solid rgba(16,217,126,0.25);
+      border-radius: 10px;
+      padding: 16px 20px;
+      margin: 16px 0;
+    }
+
+    .no-collect p {
+      color: #10D97E;
+      margin: 0;
+      font-weight: 600;
+    }
+
+    .contact-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px;
+      margin-top: 40px;
+    }
+
+    .contact-box h3 {
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 12px;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 10px;
+      font-size: 14px;
+      color: var(--sub);
+    }
+
+    .contact-item a {
+      color: var(--pink);
+      text-decoration: none;
+    }
+
+    footer {
+      background: var(--surface);
+      border-top: 1px solid var(--border);
+      padding: 20px 0;
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    footer span {
+      background: linear-gradient(135deg, var(--pink), var(--purple));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <div class="logo-row">
+      <div class="logo-circle">A</div>
+      <div>
+        <div class="brand-name">ASTAR AS&amp;I</div>
+        <div class="brand-sub">ISP Subscription Management</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+
+    <h1 class="page-title">Privacy Policy</h1>
+    <div class="effective-date">
+      Effective Date: <strong>April 6, 2025</strong> &nbsp;·&nbsp; Last Updated: <strong>April 6, 2025</strong><br>
+      Developer: <strong>Tarek Abifaraj / ASTAR</strong> &nbsp;·&nbsp; Contact: <a href="mailto:abifaraj@live.com" style="color:var(--pink)">abifaraj@live.com</a>
+    </div>
+
+    <div class="intro-box">
+      This Privacy Policy explains how <strong>ASTAR AS&amp;I</strong> ("the App", "we", "our") handles your information. The App is a subscription and customer management tool for ISP resellers and service businesses. We are committed to protecting your privacy.
+    </div>
+
+    <!-- Section 1 -->
+    <h2>1. Information We Collect</h2>
+    <p>The App stores data <strong>locally on your device only</strong>. We collect and store the following information that you manually enter:</p>
+    <ul>
+      <li><strong>Customer data:</strong> Names, phone numbers, email addresses, subscription details, payment history, and notes you add for your own customers.</li>
+      <li><strong>Business data:</strong> Your ISP settings, subscription plans, pricing, and service records.</li>
+      <li><strong>Device information:</strong> For license verification, we generate a device identifier based on your device hardware (not personally identifiable).</li>
+      <li><strong>App usage:</strong> The App does not collect analytics, crash reports, or usage statistics unless you explicitly enable them.</li>
+    </ul>
+
+    <div class="no-collect">
+      <p>✅ We do NOT collect your data on our servers. All customer data you enter stays on your device and your optional cloud backup destination (if configured by you).</p>
+    </div>
+
+    <!-- Section 2 -->
+    <h2>2. Camera Permission</h2>
+    <p>The App requests access to your device camera for the following specific purpose:</p>
+    <ul>
+      <li>Scanning barcodes to look up products or customers within the App.</li>
+      <li>Taking photos of customers or items that you manually add to your records.</li>
+    </ul>
+    <p>Camera access is only activated when you explicitly use a barcode scan or photo feature. We never access the camera in the background.</p>
+
+    <!-- Section 3 -->
+    <h2>3. Storage / Files Permission</h2>
+    <p>The App may request storage access to:</p>
+    <ul>
+      <li>Save PDF reports and receipts to your device.</li>
+      <li>Import/export customer data in CSV format.</li>
+      <li>Save and restore app backups.</li>
+    </ul>
+
+    <!-- Section 4 -->
+    <h2>4. Network / Internet Access</h2>
+    <p>The App uses internet access for:</p>
+    <ul>
+      <li><strong>License verification:</strong> Checking your license key against our activation server on first launch and periodically.</li>
+      <li><strong>ISP panel integration:</strong> If you configure ISP panel settings, the App connects to your ISP panel server (your own server) to sync customer data.</li>
+      <li><strong>WhatsApp integration:</strong> Opening WhatsApp to send messages to your customers (no data is sent to us).</li>
+    </ul>
+    <p>We do not sell, rent, or share your data with any third parties for marketing purposes.</p>
+
+    <!-- Section 5 -->
+    <h2>5. How We Use Your Information</h2>
+    <p>Information entered into the App is used solely to provide the App's features:</p>
+    <ul>
+      <li>Displaying and managing your customer list and subscriptions.</li>
+      <li>Generating invoices, receipts, and reports for your business.</li>
+      <li>Sending payment reminders to your customers via WhatsApp (initiated only by you).</li>
+      <li>Verifying your license to use the App.</li>
+    </ul>
+
+    <!-- Section 6 -->
+    <h2>6. Data Storage &amp; Security</h2>
+    <p>All customer and business data is stored <strong>locally on your device</strong> using secure local storage. We do not operate a database of your customers. If you use the optional backup feature, data is exported to a destination you configure (such as your own cloud storage or email).</p>
+    <p>We use industry-standard security practices to protect your license information during transmission.</p>
+
+    <!-- Section 7 -->
+    <h2>7. Data Sharing</h2>
+    <p>We do <strong>not</strong> share your personal or business data with third parties except in these limited cases:</p>
+    <ul>
+      <li><strong>License server:</strong> Your device ID and license key are sent to our license activation server to verify your subscription. No customer data is ever sent.</li>
+      <li><strong>Legal requirements:</strong> We may disclose information if required by law or legal process.</li>
+    </ul>
+
+    <!-- Section 8 -->
+    <h2>8. Data Retention &amp; Deletion</h2>
+    <p>Since all data is stored on your device, you control it entirely:</p>
+    <ul>
+      <li>Deleting the App from your device removes all locally stored data.</li>
+      <li>You can export your data as a backup before deletion.</li>
+      <li>To request deletion of your license activation record from our server, contact us at <a href="mailto:abifaraj@live.com" style="color:var(--pink)">abifaraj@live.com</a>.</li>
+    </ul>
+
+    <!-- Section 9 -->
+    <h2>9. Children's Privacy</h2>
+    <p>ASTAR AS&amp;I is a business management tool intended for adults and business operators. The App is not directed at or intended for children under the age of 13. We do not knowingly collect personal information from children.</p>
+
+    <!-- Section 10 -->
+    <h2>10. Your Rights</h2>
+    <p>Depending on your jurisdiction, you may have rights including:</p>
+    <ul>
+      <li>The right to access data we hold about you (your license record).</li>
+      <li>The right to correct inaccurate data.</li>
+      <li>The right to request deletion of your license record.</li>
+    </ul>
+    <p>To exercise any of these rights, contact us at the address below.</p>
+
+    <!-- Section 11 -->
+    <h2>11. Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time. When we do, we will update the "Last Updated" date at the top of this page. Continued use of the App after changes constitutes your acceptance of the updated policy.</p>
+
+    <!-- Section 12 -->
+    <h2>12. Contact Us</h2>
+    <div class="contact-box">
+      <h3>Questions about this Privacy Policy?</h3>
+      <div class="contact-item">
+        📧 <a href="mailto:abifaraj@live.com">abifaraj@live.com</a>
+      </div>
+      <div class="contact-item">
+        💬 WhatsApp: <a href="https://wa.me/96103848527">+961 03 848 527</a>
+      </div>
+      <div class="contact-item">
+        🌐 Website: <a href="https://www.astar-lb.com" target="_blank">www.astar-lb.com</a>
+      </div>
+      <div class="contact-item">
+        📍 Lebanon
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    &copy; 2025 <span>ASTAR</span> — Tarek Abifaraj. All rights reserved.
+  </div>
+</footer>
+
+</body>
+</html>
